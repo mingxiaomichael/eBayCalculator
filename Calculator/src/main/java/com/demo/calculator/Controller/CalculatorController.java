@@ -10,12 +10,12 @@ import java.math.BigDecimal;
 
 @RestController
 @RequestMapping("/api/v1/calculator")
-public class Calculator {
+public class CalculatorController {
 
     private final CalculateService calculateService;
 
     @Autowired
-    public Calculator(CalculateService calculateService) {
+    public CalculatorController(CalculateService calculateService) {
         this.calculateService = calculateService;
     }
 

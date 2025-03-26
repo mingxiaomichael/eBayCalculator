@@ -12,6 +12,15 @@ public class CalculateRequest {
     private BigDecimal num1;
     private BigDecimal num2;
 
+    public CalculateRequest() {
+    }
+
+    public CalculateRequest(String operation, BigDecimal num1, BigDecimal num2) {
+        this.operation = operation;
+        this.num1 = num1;
+        this.num2 = num2;
+    }
+
     public String getOperation() {
         return operation;
     }

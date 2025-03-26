@@ -10,6 +10,6 @@ public class DivisionOperation implements Operation {
         if (b.compareTo(BigDecimal.ZERO) == 0) {
             throw new ArithmeticException("Cannot divide by zero");
         }
-        return a.divide(b, BigDecimal.ROUND_HALF_UP);
+        return a.divide(b, 5, BigDecimal.ROUND_HALF_UP);
     }
 }

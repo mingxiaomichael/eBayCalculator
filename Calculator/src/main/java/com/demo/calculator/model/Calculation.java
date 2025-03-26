@@ -11,6 +11,14 @@ public class Calculation {
     private String operation;
     private BigDecimal num;
 
+    public Calculation() {
+    }
+
+    public Calculation(String operation, BigDecimal num) {
+        this.operation = operation;
+        this.num = num;
+    }
+
     // Getters and Setters
     public String getOperation() {
         return operation;
